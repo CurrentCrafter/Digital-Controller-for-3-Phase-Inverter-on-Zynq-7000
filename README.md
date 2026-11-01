@@ -120,11 +120,8 @@ The hardware (FPGA logic) writes the ADC values into Block RAM (BRAM):
 │   ├── GUI.c / .h         ASCII command protocol: state, features, variables, debug dumps
 │   ├── SPI.c / .h         DAC output for oscilloscope debugging (4 channels + trigger)
 │   ├── DEBUG.c / .h       Debug helpers (value logging, SOGI debug capture)
-│   ├── platform.c/.h      Vitis platform init (cache, UART stdout)
-│   ├── platform_config.h  stdout configuration (PS UART)
-│   ├── lscript.ld         Zynq linker script (memory regions)
-│   └── Xilinx.spec        toolchain spec file
-│  
+│   └── platform.c/.h      Vitis platform init (cache, UART stdout)
+│     
 └── gui/               PC control console (connects to the firmware via UART)
     ├── README.md          GUI documentation + UART protocol + error-code table
     ├── Konsole.py         Main application (Python 3, tkinter + pyserial)
